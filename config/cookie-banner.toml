@@ -1,0 +1,32 @@
+# Cookie banner configuration for worker-cookie.
+# Set the contents of this file as the WORKER_CONFIG secret in your Cloudflare Worker.
+#
+# Configuration is keyed by locale (e.g. en_GB, fr_FR). The worker reads the
+# visitor's Accept-Language header and picks the closest matching locale,
+# falling back to en_GB if none match.
+#
+# See https://a1ecbr0wn.com/worker-cookie/configuration for full reference.
+# See https://a1ecbr0wn.com/worker-cookie/themes for available themes and styles.
+
+[banner.en_GB]
+theme = "hacker"
+style = "box-bottom-right"
+overlay_opacity = 0
+message = "We use cookies to improve your experience. Essential cookies are always enabled."
+
+[buttons.en_GB]
+accept_label = "Accept All"
+decline_label = "Decline Non-Essential"
+
+[privacy_policy.en_GB]
+url = "https://example.com/privacy"
+link_text = "Read our privacy policy"
+
+[scripts]
+# Essential scripts are always loaded regardless of consent.
+essential = []
+
+# Tracking scripts are only loaded when the visitor accepts cookies.
+tracking = [
+  # { name = "google-analytics", src = "https://www.googletagmanager.com/gtag/js" }
+]
