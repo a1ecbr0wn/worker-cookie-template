@@ -6,5 +6,5 @@ use worker::*;
 /// See the `worker_cookie` crate documentation for behavior details.
 #[event(fetch)]
 async fn main(req: Request, env: Env, ctx: Context) -> Result<Response> {
-    worker_cookie::run(req, env, ctx).await
+    cookie_worker::run(req, env, ctx).await
 }

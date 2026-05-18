@@ -1,6 +1,6 @@
 [package]
-name = "cookie-worker"
-version = "0.1.0"
+name = "my-cookie-worker"
+version = "0.0.1"
 edition = "2024"
 
 [lib]
@@ -12,7 +12,9 @@ default = ["console_error_panic_hook"]
 [dependencies]
 worker = { version = "0.8.3" }
 worker-macros = { version = "0.8.3" }
-worker-cookie = { version = "0.1" }
+# temporary — until published
+cookie-worker = { git = "https://github.com/a1ecbr0wn/worker-cookie" }
+#cookie-worker = { version = "0.1" }
 console_error_panic_hook = { version = "0.1.7", optional = true }
 
 [profile.release]
