@@ -5,22 +5,40 @@
 # visitor's Accept-Language header and picks the closest matching locale,
 # falling back to en_GB if none match.
 #
-# See https://a1ecbr0wn.com/worker-cookie/configuration for full reference.
-# See https://a1ecbr0wn.com/worker-cookie/themes for available themes and styles.
+# See https://cookies.a1ecbr0wn.com/configuration for full reference.
+# See https://cookies.a1ecbr0wn.com/themes for available themes and styles.
 
-[banner.en_GB]
+[banner]
 theme = "hacker"
 style = "box-bottom-right"
 overlay_opacity = 0
 message = "We use cookies to improve your experience. Essential cookies are always enabled."
 
-[buttons.en_GB]
+[buttons]
 accept_label = "Accept All"
 decline_label = "Decline Non-Essential"
 
-[privacy_policy.en_GB]
+[buttons.en_US]
+accept_label = "Give me all"
+decline_label = "Only what you have to"
+
+[privacy_policy]
 url = "https://example.com/privacy"
 link_text = "Read our privacy policy"
+
+[banner.fr_FR]
+theme = "fire"
+style = "box-bottom-left"
+overlay_opacity = 0
+message = "Nous utilisons des cookies pour améliorer votre expérience. Les cookies essentiels sont toujours activés."
+
+[buttons.fr_FR]
+accept_label = "Tout accepter"
+decline_label = "Refuser les non-essentiels"
+
+[privacy_policy.fr_FR]
+url = "https://example.com/privacy"
+link_text = "Lire notre politique de confidentialité"
 
 [scripts]
 # Essential scripts are always loaded regardless of consent.

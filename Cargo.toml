@@ -12,9 +12,8 @@ default = ["console_error_panic_hook"]
 [dependencies]
 worker = { version = "0.8.3" }
 worker-macros = { version = "0.8.3" }
-# temporary — until published
-cookie-worker = { git = "https://github.com/a1ecbr0wn/worker-cookie" }
-#cookie-worker = { version = "0.1" }
+# cookie-worker = { git = "https://github.com/a1ecbr0wn/worker-cookie" }
+cookie-worker = { version = "0.1" }
 console_error_panic_hook = { version = "0.1.7", optional = true }
 
 [profile.release]
