@@ -10,8 +10,8 @@ consent banner for a site, powered by [cookie-worker](https://github.com/a1ecbr0
    theme options.
 2. Edit `wrangler.jsonc` — change `name` to your worker name.
 3. Edit `config/cookie-banner.toml` — set your message, theme, and scripts.
-4. Add a `CLOUDFLARE_API_TOKEN` secret to this repository (Settings → Secrets →
-   Actions).
+4. Add a `CLOUDFLARE_API_TOKEN` secret to this repository
+   (Settings → Secrets → Actions).
 5. Push — GitHub Actions will build and upload the worker.
 
 See the [cookie-worker documentation](https://cookies.a1ecbr0wn.com/configuration)
